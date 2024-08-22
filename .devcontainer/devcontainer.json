@@ -11,7 +11,10 @@
 		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
 		"ghcr.io/frntn/devcontainers-features/postman:1": {}
 	},
-	"postCreateCommand": "bash ./.devcontainer/install_mockoon.sh"
+	"postCreateCommand": "bash ./.devcontainer/install_mockoon.sh",
+	"runArgs": [
+    "--network=chatop-api_devcontainer_default"
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
